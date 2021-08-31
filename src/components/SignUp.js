@@ -5,7 +5,7 @@ import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import useForm from '../methods/useForm'
 import validateInfo from '../methods/validateInfo';
 
-const FormSignUp = ({ submitForm }) => {
+const SignUp = ({ submitForm }) => {
 
     const { handleChange, values, handleSubmit, errors } = useForm(submitForm, validateInfo);
 
@@ -42,4 +42,4 @@ const FormSignUp = ({ submitForm }) => {
     );
 };
 
-export default FormSignUp;
+export default SignUp;

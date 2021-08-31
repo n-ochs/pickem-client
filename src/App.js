@@ -1,15 +1,26 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import theme from './theme';
 import { ThemeProvider } from '@material-ui/core';
+import theme from './theme';
 import Navbar from './components/Navbar';
-import Signup from './pages/Signup';
+import SignUp from './components/SignUp';
+import Home from './pages/Home';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-      <Navbar />
-      <Signup />
+        <Navbar />
+          <Switch>
+
+            <Route exact path='/' >
+              <Home />
+            </Route>
+
+            <Route path='/signup' >
+              <SignUp />
+            </Route>
+
+        </Switch>
       </Router>
     </ThemeProvider>
   );
