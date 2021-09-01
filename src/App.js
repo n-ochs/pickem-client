@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/core';
-import theme from './theme';
+import theme from './styles/theme';
 import Navbar from './components/Navbar';
 import SignUp from './components/SignUp';
 import Home from './pages/Home';

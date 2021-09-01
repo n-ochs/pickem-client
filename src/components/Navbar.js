@@ -40,7 +40,7 @@ const useStyles = makeStyles(() => ({
     },
   }));
   
-function Navbar() {
+const Navbar = () => {
     const { header, logo, menuButton, toolbar, drawerContainer } = useStyles();
     
     const [state, setState] = useState({

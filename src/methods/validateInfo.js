@@ -1,5 +1,5 @@
 const validateInfo = (values) => {
-    let errors = {}
+    let errors = {};
 
     //Username check
     if (!values.username.trim()) {
